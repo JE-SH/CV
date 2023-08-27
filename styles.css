@@ -5,7 +5,7 @@
 main{
     width: calc(21cm*var(--zoom)) ;
     height: calc(29.7cm*var(--zoom));
-    margin: 2em auto 2em auto;
+    margin: 1em auto 1em auto;
     border: 2px solid rgb(185, 185, 185);
     /*border-radius: 140px;*/
     background: rgba(250, 250, 250, 0.562);
@@ -15,26 +15,30 @@ main{
     display: block;
     /*background: linear-gradient(rgb(182, 222, 255),rgb(184, 224, 255), rgb(186, 226, 255),  rgb(188, 228, 255),rgb(200, 230, 255) );*/
 }
+h1{
+    /* font-size: calc(var(--zoom)*26pt); */
+
+}
 h2{
     font-family: "League Spartan";
     font-size: calc(var(--zoom)*22pt);
     text-align: center;
     border-bottom: 2px solid #085287;
     color: #085287;
-    margin:  calc(var(--zoom)*15px) 0 calc(var(--zoom)*10px) 0;
+    margin:  calc(var(--zoom)*8px) 0 calc(var(--zoom)*8px) 0;
 
 }
 h3{
     font-size: calc(var(--zoom)*16pt);
     font-weight: 500;
     text-align: center;
-    margin-bottom:  calc(var(--zoom)*5px) ;
+    margin:  calc(var(--zoom)*8px) 0 calc(var(--zoom)*8px) 0;
 
 }
 h4{
     font-size: calc(var(--zoom)*16pt);
     font-weight: 600;
-    margin:  calc(var(--zoom)*15px) 0 calc(var(--zoom)*10px) 0;
+    margin:  calc(var(--zoom)*8px) 0 calc(var(--zoom)*8px) 0;
 }
 p,a{
     font-size: calc(var(--zoom)*12pt);
@@ -42,11 +46,20 @@ p,a{
     margin: calc(var(--zoom)*8px) 0 calc(var(--zoom)*8px) 0;
 }
 a{
+    color: black;
+    text-decoration: none;
+}
+.contact a{
     color: white;
     text-decoration: none;
 
 } a:visited{
     color: rgb(236, 236, 236);
+}
+
+.experience a{
+    color: black;
+    text-align: center;
 }
 
 ul{
@@ -87,7 +100,7 @@ td{
     width: 55%;
 
     font-family: 'League Spartan';
-    font-size: calc(var(--zoom)*22pt);
+    font-size: calc(var(--zoom)*20pt);
     letter-spacing: calc(var(--zoom)*4pt);
     font-weight: bolder;
     padding: calc(var(--zoom)*7PX);
@@ -141,7 +154,7 @@ td{
     padding: calc(var(--zoom)*6px);
 }
 .education{
-    padding: calc(var(--zoom)*12px);
+    padding: calc(var(--zoom)*6px);
 
 } .education p{
     text-align: center;
@@ -153,7 +166,7 @@ td{
     border-bottom: .01px dotted #085287;
 }
 .experience{
-    padding: calc(var(--zoom)*12px);
+    padding: calc(var(--zoom)*6px);
 
 }
 
@@ -167,7 +180,21 @@ td{
 
 
 /*--------------+ID's+--------------*/
+.text-center{
+    text-align: center;
+}
 #margin-t{
     display: flex;
     margin-top:calc(var(--zoom)*15px) ;
+}
+.botton{
+    color:black;
+    text-align: center;
+    margin: auto;
+} 
+
+.botton:hover{
+    color: white;
+    
+    background: #2f88ff;
 }
